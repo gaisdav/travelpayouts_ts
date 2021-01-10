@@ -1,0 +1,24 @@
+{
+  "name": "travelpayouts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/scripts/index.ts",
+  "scripts": {
+    "start": "serve dist",
+    "build": "npm i && webpack && npm start"
+  },
+  "author": "Gaisar Davletkildin",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.0.1",
+    "mini-css-extract-plugin": "^1.3.3",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "serve": "^11.3.2",
+    "ts-loader": "^8.0.14",
+    "typescript": "^4.1.3",
+    "webpack": "^5.12.2",
+    "webpack-cli": "^4.3.1"
+  }
+}
