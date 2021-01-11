@@ -3,6 +3,7 @@ export interface IOptions{
   textColor?: string;
   buttonBg?: string;
   widgetBg?: string;
+  widgetStyles?: string;
 }
 
 export interface IWidget{

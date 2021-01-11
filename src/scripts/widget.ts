@@ -6,6 +6,7 @@ class Widget implements IWidget {
   private readonly buttonBg: string = '';
   private readonly textColor: string = '';
   private readonly widgetId: string = 'widget';
+  private readonly widgetStyles: string = './widgetstyles.css';
 
   private readonly descriptionText =
     'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.';
@@ -43,13 +44,14 @@ class Widget implements IWidget {
       this.buttonBg = options.buttonBg || this.buttonBg;
       this.textColor = options.textColor || this.textColor;
       this.widgetId = options.widgetId || this.widgetId;
+      this.widgetStyles = options.widgetStyles || this.widgetStyles;
     }
   }
 
   init = () => {
     const style = document.createElement('link');
     style.setAttribute('rel', 'stylesheet');
-    style.setAttribute('href', './widgetstyles.css');
+    style.setAttribute('href', this.widgetStyles);
 
     const ref = document.querySelector('head');
     const container = document.getElementById(this.widgetId);

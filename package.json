@@ -5,7 +5,7 @@
   "main": "./src/scripts/index.ts",
   "scripts": {
     "start": "serve dist",
-    "build": "npm i && webpack && npm start"
+    "build": "webpack && npm start"
   },
   "author": "Gaisar Davletkildin",
   "license": "ISC",
